@@ -6,12 +6,15 @@ using System.Net.Http;
 using System.Web.Http;
 using StudentManagementV1.Models;
 using System.Collections;
+using System.Web.Http.Cors;
 
 namespace StudentManagementV1.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class StudentController : ApiController
     {
         // GET: api/Student
+        [HttpGet]
         public ArrayList Get()
         {
             StudentPersistance sp = new StudentPersistance();
@@ -19,6 +22,7 @@ namespace StudentManagementV1.Controllers
         }
 
         // GET: api/Student/5
+        [HttpGet]
         public sinhvien Get(long id)
         {
             StudentPersistance sp = new StudentPersistance();
@@ -27,6 +31,7 @@ namespace StudentManagementV1.Controllers
         }
 
         // POST: api/Student
+        [HttpPost]
         public HttpResponseMessage Post([FromBody]sinhvien value)
         {
             StudentPersistance sp = new StudentPersistance();
@@ -39,6 +44,7 @@ namespace StudentManagementV1.Controllers
         }
 
         // PUT: api/Student/5
+        [HttpPut]
         public HttpResponseMessage Put(long id, [FromBody]sinhvien value)
         {
             StudentPersistance sp = new StudentPersistance();
@@ -60,6 +66,7 @@ namespace StudentManagementV1.Controllers
         }
 
         // DELETE: api/Student/5
+        [HttpDelete]
         public HttpResponseMessage Delete(long id)
         {
             StudentPersistance sp = new StudentPersistance();

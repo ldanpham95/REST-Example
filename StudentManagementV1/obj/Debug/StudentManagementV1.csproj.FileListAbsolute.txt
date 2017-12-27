@@ -59,3 +59,6 @@ E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\bin\System.Web.WebP
 E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\bin\Antlr3.Runtime.pdb
 E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\obj\Debug\StudentManagementV1.dll
 E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\obj\Debug\StudentManagementV1.pdb
+E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\bin\System.Web.Cors.dll
+E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\bin\System.Web.Http.Cors.dll
+E:\Visual Studio\HK9\StudentManagementV1\StudentManagementV1\bin\System.Web.Http.Cors.xml
